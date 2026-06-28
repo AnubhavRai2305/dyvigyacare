@@ -1,0 +1,161 @@
+/* ============================================================
+   Footer.css — Dyvigya Care
+   ============================================================ */
+
+.dyc-footer {
+  background-color: var(--dyc-black, #0a0a0a);
+  color: #fff;
+  padding: 72px 5% 0;
+  border-top: 4px solid var(--dyc-yellow, #ffee00);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 48px;
+  max-width: var(--max-w-wide, 1400px);
+  margin: 0 auto 56px;
+}
+
+/* ── Brand Column ── */
+.footer-brand {
+  color: var(--dyc-yellow, #ffee00);
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.footer-tagline {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.55);
+  max-width: 280px;
+  margin-bottom: 28px;
+}
+
+/* ── Column Headings ── */
+.footer-col h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--dyc-yellow, #ffee00);
+}
+
+/* ── Links ── */
+.footer-col a {
+  display: block;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  transition: color var(--transition-fast, 0.18s), padding-left var(--transition-fast, 0.18s);
+}
+
+.footer-col a:hover {
+  color: var(--dyc-yellow, #ffee00);
+  padding-left: 6px;
+}
+
+.footer-email {
+  color: var(--dyc-yellow, #ffee00) !important;
+  opacity: 0.8;
+  margin-top: 12px;
+  font-size: 0.85rem !important;
+}
+
+.footer-email:hover {
+  opacity: 1;
+  padding-left: 0 !important;
+}
+
+/* ── Social Icons ── */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.65);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm, 4px);
+  margin-bottom: 0;
+  transition: background var(--transition-fast, 0.18s), color var(--transition-fast, 0.18s), border-color var(--transition-fast, 0.18s), transform var(--transition-fast, 0.18s);
+  padding-left: 0 !important;
+}
+
+.social-icons a:hover {
+  background: var(--dyc-yellow, #ffee00);
+  color: var(--dyc-black, #000);
+  border-color: var(--dyc-yellow, #ffee00);
+  transform: translateY(-3px);
+  padding-left: 0 !important;
+}
+
+/* ── Footer Bottom ── */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 24px 0;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .brand-col {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px 40px;
+    align-items: start;
+  }
+
+  .footer-desc { grid-column: 1 / -1; }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-col {
+    grid-template-columns: 1fr;
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,235 @@
+/* --- DONATE SECTION --- */
+.donate-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.donate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.donate-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.donate-info p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-list li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.impact-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--dyc-yellow);
+  font-weight: bold;
+}
+
+/* --- MINIMALIST DONATION WIDGET --- */
+.donate-widget {
+  background-color: var(--dyc-light-grey);
+  padding: 40px;
+  border-top: 5px solid var(--dyc-yellow);
+  box-shadow: none;
+}
+
+.donate-widget h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.amount-btn {
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid var(--dyc-black);
+  color: var(--dyc-black);
+  cursor: pointer;
+  border-radius: 0; /* Strict sharp edges */
+  transition: all 0.2s ease;
+}
+
+.amount-btn:hover {
+  background-color: var(--dyc-light-grey);
+}
+
+.amount-btn.active {
+  background-color: var(--dyc-yellow);
+  border-color: var(--dyc-yellow);
+}
+
+.custom-amount-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.custom-amount-input {
+  width: 100%;
+  padding: 15px 15px 15px 35px;
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  border: 2px solid var(--dyc-black);
+  border-radius: 0;
+  outline: none;
+}
+
+.custom-amount-input:focus, .custom-amount-input.active-input {
+  border-color: var(--dyc-yellow);
+  background-color: #fffdf0;
+}
+
+.donate-submit-btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.tax-note {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* --- FINANCIAL TRANSPARENCY --- */
+.transparency-section {
+  padding: 80px 0;
+  background-color: var(--dyc-black);
+  color: #fff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.stat-box {
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-bottom: 4px solid var(--dyc-yellow);
+}
+
+.stat-box.spent { border-bottom-color: var(--dyc-red); }
+.stat-box.impact { border-bottom-color: var(--dyc-brown); }
+
+.stat-box h3 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.progress-bars-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.progress-row {
+  margin-bottom: 20px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.progress-track {
+  height: 12px;
+  background-color: #333;
+  width: 100%;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--dyc-yellow);
+}
+
+/* --- VOLUNTEER & PARTNER CTAS --- */
+.action-ctas-section {
+  padding: 80px 0;
+  background-color: var(--dyc-light-grey);
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cta-card {
+  padding: 50px 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.volunteer-card {
+  border-left: 5px solid var(--dyc-black);
+}
+
+.partner-card {
+  background-color: var(--dyc-yellow);
+  border: none;
+}
+
+.cta-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-card p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .donate-grid { grid-template-columns: 1fr; }
+  .cta-grid { grid-template-columns: 1fr; }
+  .stat-box h3 { font-size: 2.2rem; }
+}

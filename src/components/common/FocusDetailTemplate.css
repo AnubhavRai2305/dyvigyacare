@@ -1,0 +1,146 @@
+/* src/components/common/FocusDetailTemplate.css */
+
+.focus-detail-page {
+  background-color: #ffffff;
+  padding: 80px 5%;
+  min-height: 100vh;
+}
+
+.focus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.focus-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.focus-title {
+  font-size: 3.5rem;
+  color: var(--dyc-black);
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.title-divider {
+  height: 6px;
+  width: 80px;
+  background-color: var(--dyc-yellow);
+  margin: 0 auto;
+}
+
+.focus-hero-image {
+  width: 100%;
+  margin-bottom: 60px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.focus-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.focus-content-section {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: flex-start;
+}
+
+.focus-description {
+  flex: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.focus-stats-card {
+  flex: 1;
+  background-color: var(--dyc-light-grey);
+  padding: 40px;
+  border-left: 6px solid var(--dyc-yellow);
+  box-shadow: none;
+}
+
+.focus-stats-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--dyc-black);
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+}
+
+.stats-list li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.stat-icon {
+  color: var(--dyc-red);
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
+.focus-cta-section {
+  text-align: center;
+  background-color: var(--dyc-black);
+  color: #fff;
+  padding: 80px 40px;
+  border-radius: 0;
+  border-top: 5px solid var(--dyc-yellow);
+}
+
+.focus-cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.focus-cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 900px) {
+  .focus-content-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .focus-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .focus-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,143 @@
+/* --- CONTACT LAYOUT --- */
+.contact-section {
+  padding: 80px 0;
+  background-color: var(--dyc-light-grey);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+}
+
+/* --- CONTACT INFO --- */
+.contact-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.info-block {
+  margin-bottom: 30px;
+  border-left: 4px solid var(--dyc-yellow);
+  padding-left: 20px;
+}
+
+.info-block h4 {
+  font-size: 1.1rem;
+  color: var(--dyc-black);
+  margin-bottom: 5px;
+}
+
+.info-block a {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.info-block a:hover {
+  color: var(--dyc-yellow);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: var(--dyc-black);
+  color: var(--dyc-yellow);
+  padding: 8px 15px;
+  font-weight: 700;
+}
+
+.social-links a:hover {
+  background-color: var(--dyc-yellow);
+  color: var(--dyc-black);
+}
+
+/* --- CONTACT FORM --- */
+.contact-form-wrapper {
+  background-color: #fff;
+  padding: 40px;
+  border-top: 5px solid var(--dyc-black);
+  box-shadow: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: var(--dyc-black);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 15px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0; /* Strict sharp edges */
+  background-color: #fcfcfc;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--dyc-yellow);
+  background-color: #fffdf0;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 18px;
+  margin-top: 10px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
